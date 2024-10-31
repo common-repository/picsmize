@@ -1,0 +1,47 @@
+html body .Polaris-Modal-Dialog__Container{display: none;z-index: 99999;}
+#custom-war{display: none;margin-bottom: 1rem;}
+
+.polaris-radio-box {flex: 1 1 15rem;}
+.polaris-radio-box .Polaris-Card {box-shadow: none;}
+.polaris-radio-box input[type="radio"] {display: none;}
+.polaris-radio-box label {width: 100%;min-height: 81px;display: block;padding: 12px 14px;border: 2px solid #e0e0e0;border-radius: 8px;cursor: pointer;}
+.polaris-radio-box .edit-link {font-size: 13px;font-weight: 500;color: #000;float: right;margin: 3px 0;text-transform: uppercase;text-decoration: none;display: none;}
+.polaris-radio-box .chckbx-icon {width: 25px;height: 25px;display: block;background: #eee;border: 2px solid #ccc;border-radius: 6px;margin-bottom: 10px;overflow: hidden;position: relative;}
+.polaris-radio-box .chckbx-icon:after {content: '';position: absolute;top: 5px;left: 5px;width: 12px;height: 7px;border-left: 2px solid #FFF;border-bottom: 2px solid #FFF;transform: rotate(-45deg);opacity: 0;}
+.polaris-radio-box .Polaris-Heading {font-size: 1.5rem;line-height: 1.2;}
+.polaris-radio-box input:checked + label {background: rgba(0, 128, 96, .05);border-color: var(--p-action-primary);}
+.polaris-radio-box input:checked + label .edit-link {display: block;}
+.polaris-radio-box input:checked + label .chckbx-icon {background: var(--p-action-primary);border-color: var(--p-action-primary);}
+.polaris-radio-box input:checked + label .chckbx-icon:after {opacity: 1;}
+.polaris-radio-box input:not(:checked) + label .polaris-img-qlt {opacity: 0.5;}
+
+.polaris-img-qlt {min-width: 100%;}
+.polaris-img-qlt label {min-width: 33.33%;float: right;display: flex;justify-content: center;font-size: 1.15rem;line-height: 1.6rem;font-weight: 500;color: #999;margin: .75rem 0 0 auto;padding-left: 2rem;}
+.polaris-img-qlt span {margin: 0 2px;}
+.polaris-img-qlt .qlt-divider {border-left: 1px solid var(--p-divider);margin: 0 8px;}
+.polaris-img-qlt .qlt-lbl {color: #333;}
+
+.polaris-cstng-row {align-items: stretch;}
+.polaris-cstng-box {flex: 1 1 27rem;}
+.polaris-cstng-box .Polaris-Card {display: flex;flex-direction: column;height: 100%;min-height: 180px;cursor: pointer;position: relative;}
+.polaris-cstng-box .Polaris-Card__Header {background: #f6f6f7;margin: 1.5rem 1.5rem 0;padding: 1.2rem 2rem;border: 0.1rem solid var(--p-divider);border-radius: 8px;}
+.polaris-cstng-box .Polaris-Card__Header .Polaris-Heading {font-size: 1.5rem;}
+
+.polaris-temp-block .Polaris-Card__Header {padding: 1.5rem 2rem;border-bottom: 0.1rem solid var(--p-divider);}
+.polaris-temp-block .Polaris-Card__Header .Polaris-Button {float: right;margin: -2px 0;}
+.polaris-temp-block .Polaris-Card__Header .Polaris-Button__Content {font-size: 1.2rem;}
+.itag-list {list-style: none;padding: 0;margin: 5px 0 0;}
+.itag-list .Polaris-Button {margin: 10px 7px 0 0;border-color: #008060;color: #008060;background: rgba(0, 128, 96, .1);}
+.polaris-cstng-box .input-radio {display: none;}
+
+.polaris-cstng-box .input-radio:checked + .Polaris-Card {box-shadow: 0 0 0 2px rgba(16, 136, 106, .30);}
+.polaris-cstng-box .input-radio:checked + .Polaris-Card .Polaris-Card__Header {background: #008060;border-color: #008060;border-radius: var(--p-border-radius-wide, 3px);}
+.polaris-cstng-box .input-radio:checked + .Polaris-Card .Polaris-Card__Header .Polaris-Heading {color: #FFF;}
+
+.polaris-cstng-box .sel-img-type {margin-top: 10px;font-size: 12px;font-weight: bold;color: #008060;text-transform: uppercase;text-align: right;}
+.polaris-cstng-box .sel-img-type span {display: inline-block;vertical-align: middle;border-bottom: 1px solid;padding-bottom: 1px;}
+.polaris-cstng-box .input-radio:not(:checked) + .Polaris-Card .sel-img-type{display: none;}
+
+.polaris-cstng-box input.disabled + .Polaris-Card .purchase-plan-txt, .polaris-cstng-box input[disabled] + .Polaris-Card .purchase-plan-txt {opacity: 1;visibility: visible;}
+.purchase-plan-txt {position: absolute;top: 0;left: 0;width: 100%;height: 100%;display: flex;flex-direction: column;justify-content: center;align-items: center;background: rgba(255, 255, 255, .9);border-radius: var(--p-border-radius-wide, 3px);padding: 20px;text-align: center;opacity: 0;visibility: hidden;z-index: 1;}
+.purchase-plan-txt h2 {font-size: 15px;font-weight: 500;line-height: 1.4;margin-bottom: 15px;}
